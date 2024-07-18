@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         'playwrite': "Playwrite DE Grund, sans-serif",
       },
+      boxShadow: {
+        'dense':  "5px 5px 15px darkslategray",
+      }
     },
   },
   plugins: [],

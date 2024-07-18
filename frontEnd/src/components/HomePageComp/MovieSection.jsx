@@ -37,19 +37,19 @@ const MovieSection = () => {
 
 
 
-  const handleScroll = () => {
-    if (scrollIntoRef.current) {
-      scrollIntoRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+  // const handleScroll = () => {
+  //   if (scrollIntoRef.current) {
+  //     scrollIntoRef.current.scrollIntoView({ behavior: 'smooth' });
+  //   }
+  // };
 
 
   return (
     <div className='h-auto w-full relative -top-[8vh]'>
         <div ref={scrollIntoRef} className='h-[8vh] w-full flex justify-center items-center gap-8'>
-          <NavLink onClick={handleScroll} className={`hover:text-gray-200`} to={'popular'}>Popular Movies</NavLink>
-          <NavLink onClick={handleScroll} className={`hover:text-gray-200`} to={'top_rated'}>Top Rated Movies</NavLink>
-          <NavLink onClick={handleScroll} className={`hover:text-gray-200`} to={'upcoming'}>Upcoming Movies</NavLink>
+          <NavLink className={`hover:text-gray-200`} to={'popular'}>Popular Movies</NavLink>
+          <NavLink className={`hover:text-gray-200`} to={'top_rated'}>Top Rated Movies</NavLink>
+          <NavLink className={`hover:text-gray-200`} to={'upcoming'}>Upcoming Movies</NavLink>
         </div>
 
         <div ref={movieCardsRef}>

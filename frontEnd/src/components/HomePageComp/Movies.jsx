@@ -65,7 +65,7 @@ const Movies = () => {
         <div className='flex text-xl h-[10vh] w-full justify-center items-center gap-24'>
           <Link to={'/'} className='flex hover:text-gray-200 justify-center items-center gap-2 cursor-pointer'>
             <FontAwesomeIcon icon={faHome} />
-            <h3>Go Home</h3>
+            <h3>Go Back To Home</h3>
           </Link>
           <div onClick={handleGoBack} className='flex hover:text-gray-200 justify-center items-center gap-2 cursor-pointer'>
             <FontAwesomeIcon icon={faBackward} />
